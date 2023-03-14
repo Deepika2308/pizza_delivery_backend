@@ -32,14 +32,14 @@ router.put(`/saveNewPassword`, async(req,res) =>{
     }
 
     if(result.acknowledged){
-        res.status(200).send({msg:"Password changed successfully"});
+        return res.status(200).send({msg:"Password changed successfully"});
     }
     else{
-        res.status(400).send({error:"Error in changing password"});
+        return res.status(400).send({error:"Error in changing password"});
     }
    }//try ends
    catch(error){
-    res.status(500).send({error:error});
+    return res.status(500).send({error:error});
    }
 })
 
