@@ -1,7 +1,7 @@
 import express from "express";
 import jwt from "jsonwebtoken";
 import { findAdmin, findCustomer } from "../helper.js";
-import { checkString } from "../server.js";
+import { checkString } from "../index.js";
 import bcrypt from 'bcrypt';
 
 const router = express.Router();

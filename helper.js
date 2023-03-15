@@ -1,4 +1,4 @@
-import { client } from "./server.js";
+import { client } from "./index.js";
 import {ObjectId} from "mongodb";
 
 async function updateNewPasswordForAdmin(email, obj) {

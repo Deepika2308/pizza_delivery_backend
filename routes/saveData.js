@@ -1,6 +1,6 @@
 import express from 'express';
 import jwt from 'jsonwebtoken';
-import {generatePassword} from '../server.js';
+import {generatePassword} from '../index.js';
 import {findCustomer,findAdmin,updateNewPasswordForCustomer,updateNewPasswordForAdmin,saveAddress} from '../helper.js';
 
 const router = express.Router();

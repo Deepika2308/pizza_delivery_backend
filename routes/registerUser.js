@@ -1,6 +1,6 @@
 import express from 'express';
 import {registerCustomer,findAdmin,findCustomer,registerAdmin} from '../helper.js';
-import {generatePassword,checkString} from '../server.js';
+import {generatePassword,checkString} from '../index.js';
 
 const router = express.Router(); 
 
