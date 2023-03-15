@@ -20,7 +20,7 @@ dotenv.config();
 const app= express();
 app.use(cors());
 app.use(express.json());
-const PORT = 5001;
+const PORT = process.env.PORT;
 const MONGO_URL =process.env.MONGO_URL;
 
 const server = http.createServer(app);
