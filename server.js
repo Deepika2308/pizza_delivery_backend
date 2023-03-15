@@ -26,7 +26,7 @@ const MONGO_URL =process.env.MONGO_URL;
 const server = http.createServer(app);
 const io= new Server(server, {
     cors:{
-        origin:"http://localhost:3000",
+        origin:"https://effervescent-toffee-c15612.netlify.app",
     }
 });
 
